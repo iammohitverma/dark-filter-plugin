@@ -103,7 +103,8 @@ $(document).ready(function () {
   );
 
   // upload image
-  $(".filter-area .upload-img #upload").change(function (e) {
+  $(".filter-area #fileToUpload").change(function (e) {
+    debugger;
     e.preventDefault();
     let currVal = $(this).val();
     var slashLastIndex = currVal.lastIndexOf("\\");
